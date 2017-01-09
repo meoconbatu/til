@@ -18,7 +18,7 @@ A new, native implementation of dynamic SQL that does almost all of what DBMS_SQ
 However, to write native dynamic SQL code, you must know at compile time the number and data types of the input and output variables of the dynamic statement. If you do not know this information at compile time, you must you the DBMS_SQL package.
 
 ### Native Dynamic SQL
-EXECUTE IMMEDIATE "SELECT .. " (BULK COLLECT) INTO _out-bind variables_ USING _in-bind variables_  
+`EXECUTE IMMEDIATE` "SELECT .. " (BULK COLLECT) INTO _out-bind variables_ USING _in-bind variables_  
 EXECUTE IMMEDIATE "INSERT/DELETE/UPDATE .." RETURNING INTO _out-bind variables_ USING _in-bind variables_  
 EXECUTE IMMEDIATE "BEGIN .. END;" USING _all in&out-bind variables  
 OPEN _cursor_ FOR "SELECT .." USING _in-bind variables_
